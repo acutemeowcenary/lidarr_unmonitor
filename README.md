@@ -6,9 +6,12 @@ Drop the main unmonitor.bash and either/or both the unmonitor.py in the folder /
 
 In the lidarr connect page, manually add them under the custom script option, checkmark only on import, upgrade and rename. Locate the file and add it.
 
-The unmonitor_compilations automatically unmonitors any compilation, remix, live album.
+The unmonitor_compilations.py passes the artist_id to be able to find the newest album released and automatically unmonitors any compilation, remix, live album by that artist.
 
-The unmonitor_singles passes the artist_id to be able to find the newest album released by that artist and unmonitor all singles and eps that show up in that album and or previous ones.
+The unmonitor_singles.py passes the artist_id to be able to find the newest album released by that artist and unmonitor all singles and eps that show up in that album and or previous ones.
+It does with by matching any song in the singles album with any song in normal albums with an 80%. It then compares the main singles ablum name and does the same. If any one song matches, the whole single ablum is unmonitored.
+
+To remove eps, it only checks the singles album name and compares that to all songs in normal ablums. This prevents it from removing too many eps.
 
 Meant to help get rid of dupes in your library from complilation ablums and singles anytime it finds new music.
 
