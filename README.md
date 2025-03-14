@@ -1,4 +1,4 @@
-Files in the full library folder will scrub your entire library. I used them on mine and nothing got wiped. Just update the api and url.
+Files in the full library folder will scrub your entire library. I used them on mine and spot checked. They seemed to have worked well. Just update the api and url. Use the unmonitor_compilation.py first, if you plan to use both. unmonitor_singles.py looks only at monitored albums, so doing it second will get rid of even more singles.
 
 Files not in a folder are to be added to the arr-extended scripts. These are specifically for Lidarr. They will run from localhost, just update the api.
 
@@ -8,7 +8,8 @@ In the lidarr connect page, manually add them under the custom script option, ch
 
 The unmonitor_compilations.py passes the artist_id to be able to find the newest album released and automatically unmonitors any compilation, remix, live album by that artist.
 
-The unmonitor_singles.py passes the artist_id to be able to find the newest album released by that artist and unmonitor all singles and eps that show up in that album and or previous ones.
+The unmonitor_singles.py passes the artist_id to be able to find the newest album released by that artist and unmonitor all singles and eps that show up in that album and or previous ones. By default it only looks at albums you have monitored, so it doesn't remove singles from albums you don't have.
+
 It does this by matching any song in the singles album with any song in normal albums with an 80%. It then compares the main singles ablum name with any song in normal ablums with an 80%. If any one song matches (or the main name) matches a normal ablum, the whole single ablum is unmonitored.
 
 To remove eps, it only checks the singles album name and compares that to all songs in normal ablums. This prevents it from removing too many eps.
