@@ -1,4 +1,4 @@
-Files in the full library folder will scrub your entire library. I used them on mine originally. Just update the api and url.
+Files in the full library folder will scrub your entire library. I used them on mine and nothing got wiped. Just update the api and url.
 
 Files not in a folder are to be added to the arr-extended scripts. These are specifically for Lidarr. They will run from localhost, just update the api.
 
