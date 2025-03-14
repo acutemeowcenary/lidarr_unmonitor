@@ -1,8 +1,8 @@
-Files in the full library folder will scrub your entire library. I used them on mine and spot checked. They seemed to have worked well. Just update the api and url. Use the unmonitor_compilation.py first, if you plan to use both. unmonitor_singles.py looks only at monitored albums, so doing it second will get rid of even more singles.
+Files in the full library folder will scrub your entire library. I used them on mine and spot checked. They seemed to have worked well. Just update the api and url. If you plan to use both, use the unmonitor_compilation.py first. The unmonitor_singles.py looks only at monitored albums, so doing it second will help it not match stuff you plan to unmonitor with the first script.
 
-Files not in a folder are to be added to the arr-extended scripts. These are specifically for Lidarr. They will run from localhost, just update the api.
+Files not in a folder are like the arr-extended scripts. These are specifically for Lidarr. They will run from localhost, just update the api.
 
-Drop the main unmonitor.bash and either/or both the unmonitor.py in the folder /config/extended with the other arr-extended scripts. Might have to make the bash script executable with chmod +x
+Drop the main unmonitor.bash and either/or both of the unmonitor.py in the folder /config/extended with the arr-extended scripts. Might have to make the bash script executable with chmod +x
 
 In the lidarr connect page, manually add them under the custom script option, checkmark only on import, upgrade and rename. Locate the file and add it.
 
@@ -21,3 +21,5 @@ Plan to add a feature where it'll then delete any unmonitored single albums. It 
 Don't use if you want to keep multiple versions of files. I really only want albums, eps and singles that are not remixes and such. And that are not dupes.
 
 May add something to remove acoustic and instrumental and such but for now, using smart playlists resolves that issue.
+
+I don't really plan to support these much. Just using them for personal use. Feel free to fix/change/steal them.
