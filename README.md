@@ -1,4 +1,6 @@
-Files to be added to the arr-extended scripts. These are specifically for Lidarr.
+Files in the full library folder will scrub your entire library. I used them on mine originally. Just update the api and url.
+
+Files not in a folder are to be added to the arr-extended scripts. These are specifically for Lidarr. They will run from localhost, just update the api.
 
 Drop the main unmonitor.bash and either/or both the unmonitor.py in the folder /config/extended with the other arr-extended scripts. Might have to make the bash script executable with chmod +x
 
