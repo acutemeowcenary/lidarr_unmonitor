@@ -5,7 +5,7 @@ import os
 
 # Set the base URL for your Lidarr instance and the API key
 LIDARR_URL = "http://localhost:8686"  # Change this if your Lidarr instance is hosted elsewhere
-API_KEY = "10265ef23b2443dc8bd3458d9335f26c"  # Replace this with your actual Lidarr API key
+API_KEY = "api key goes here"  # Replace this with your actual Lidarr API key
 
 artist_id = os.environ.get("lidarr_artist_id")
 album_id = os.environ.get("lidarr_album_id")
